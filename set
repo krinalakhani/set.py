@@ -1,0 +1,44 @@
+fruits = ["apple","orange","kiwi", "banana", "mango", "cherry", "apple", "lichi", "banana", "mango"]
+
+#create set(01)
+thisset = set(("apple", "banana", "cherry")) 
+print(thisset)
+
+#add and remove element(02)
+set1={"apple", "banana", "mango"}
+print(set1)
+set1.add("kiwi")
+print(set1)
+set1.remove("apple")
+print(set1)
+
+#set operator(03)
+set2={"1", "5", "8", "mango"}
+print(set2)
+set3=set1.union(set2)
+print(set3)
+set4=set1.intersection(set2)
+print(set4)
+set5=set1.difference(set2)
+print(set5)
+
+#membership in set(04)
+if "watermelon" in fruits:
+    print("yes, watermelon is in fruits")
+else:
+    print("no, watermelon is not in fruits")
+
+#set comprehension(05)
+set8={x-2 for x in range(5)}
+print(set8)
+
+#remove duplicate(06)
+print(fruits)
+set6=set(fruits)
+#print(set6)
+list=list(set6)
+print(list)
+
+#symmetrpic difference(07)
+set7=set1.symmetric_difference(set2)
+print(set7)
